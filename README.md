@@ -1,16 +1,76 @@
-# Estimation of obesity levels based on eating habits and physical conditions
-It is my first project in the Data Science field. It was also my first coding experience with Python. Before it, I had many projects in MATLAB and most of them were related to my previous study field in Electrical Engineering. 
+# 📊 Obesity Levels Analysis Dashboard
 
-This project was part of the Programming and Databases course. I selected the obesity level dataset, which is quite renowned. The dataset includes data for the estimation of obesity levels in individuals from the countries of Mexico, Peru, and Colombia, based on their eating habits and physical condition. The dataset consists of 17 attributes and 2111 records, each labeled with the class variable "NObesity" (Obesity Level), allowing the classification of data using feature values. 
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/) [![Streamlit](https://img.shields.io/badge/Streamlit-App-red.svg)](https://streamlit.io/) [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-You can find more information at the below link: 
+## 📖 Description
+This project is a data science application designed to estimate obesity levels in individuals based on their eating habits and physical conditions. Using a dataset covering individuals from Mexico, Peru, and Colombia, the application provides interactive data exploration, preprocessing, and machine learning model training. 
 
-https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition 
+This project was developed as part of a Programming and Databases course to explore classification and clustering tasks using Python, pandas, and scikit-learn, with a user-friendly interface built via Streamlit.
 
-While the dataset is generally clean, as part of the project, I intentionally introduced some random deletions or value changes to create outliers or simulate bad data. This dataset is well-suited to both classification and clustering tasks in the modeling phase. So, by using these features and classified models, we can estimate obesity levels. Additionally, various graphs can be used to visually represent the relationship between these features. To present the results, I used the Streamlit library. You can customize the presentation and results. 
+## 📑 Table of Contents
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Project Structure](#-project-structure)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-I need to mention that because of the purpose of the course, the main focus of the project was on coding, not the data analysis part. 
+## ✨ Features
+- 🔄 **Data Preprocessing**: Handles missing values and performs categorical encoding for machine learning readiness.
+- 📈 **Interactive EDA**: Visualize the distribution of target variables and correlations between features via heatmaps and histograms.
+- 🤖 **Machine Learning Models**: 
+    - **KNN Classifier**: Classification with adjustable neighbors.
+    - **Linear Regression**: Performance analysis using R², MSE, and RMSE.
+    - **KMeans Clustering**: Perform unsupervised learning on the dataset.
+- 🖥️ **Streamlit GUI**: A custom web interface to interact with the data and models in real-time.
 
+## 🛠 Tech Stack
+- **Language**: Python
+- **Data Handling**: Pandas, NumPy
+- **Visualization**: Matplotlib, Seaborn
+- **Machine Learning**: Scikit-Learn
+- **Dashboard**: Streamlit
 
+## 🚀 Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/00Amirreza00/Obesity-levels.git
+   cd Obesity-levels
+   ```
+2. Install the required dependencies (ensure you have pip installed):
+   ```bash
+   pip install pandas numpy matplotlib seaborn streamlit scikit-learn
+   ```
 
+## 🖥️ Usage
+To launch the interactive dashboard, run the following command in your terminal from the project root directory:
+```bash
+streamlit run Obesity.py
+```
+Once the server starts, open the provided URL in your web browser to interact with the data variables, generate plots, and train models.
 
+## 📂 Project Structure
+```text
+Obesity-levels/
+├── Obesity.py                     # Main Streamlit application file
+├── ObesityDataSet_raw_and_data_sinthetic.csv # Dataset file
+├── variables_table.csv            # Variable definitions
+├── README.md                      # Project documentation
+└── pict.jpg                       # Asset for the UI
+```
+
+## 🤝 Contributing
+Contributions are welcome! Please fork the repository and submit a pull request if you have improvements or bug fixes. 
+
+## 📜 License
+This project is open-source and available for educational use. 
+
+## 🔗 Important Links
+- [UCI Dataset Repository](https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition)
+
+---
+*Maintained by 00Amirreza00. If you found this useful, please consider starring the repository!* 🌟
+
+---
+**<p align="center">Generated by [ReadmeCodeGen](https://www.readmecodegen.com/)</p>**
